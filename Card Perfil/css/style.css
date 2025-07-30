@@ -1,0 +1,199 @@
+/* Desktop - Responsividade */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: font;
+}
+
+:root {
+  --caput-mortuum: rgb(122, 39, 22);
+  --jet: rgb(12, 92, 68);
+  --black: rgb(14, 19, 19);
+  --chamoisee: #9c715aff;
+  --eerie: rgb(29, 29, 219);
+  --eerie-black: #202021ff;
+  --khaki: rgb(202, 194, 187);
+  --bole: #623c2dff;
+  --bistre: #312621ff;
+}
+
+@font-face {
+  font-family: font;
+  src: url(/image/PirataOne-Regular.ttf);
+}
+
+body {
+  background-image: url(/image/imagens-universo.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background: var(--khaki);
+  height: 550px;
+  width: 470px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: var(--black);
+  transition: 0.5s;
+}
+
+.card:hover {
+  height: 600px;
+}
+
+.card .img-box {
+  position: absolute;
+  width: 280px;
+  height: auto;
+  top: 0px;
+  padding: 60px;
+}
+
+.card:hover .img-box {
+  top: -73px;
+  scale: 0.75;
+}
+
+.card .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card .content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 397px;
+  width: 100%;
+  padding: 0px 30px;
+  text-align: center;
+  height: 7px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card:hover .content {
+  top: 150px;
+  height: 600px;
+}
+
+img {
+  width: 250px;
+  border-radius: 50%;
+  border: 3px solid var(--jet);
+}
+
+hr {
+  height: 3px;
+  width: 30%;
+  background-color: var(--bistre);
+  border-radius: 5px;
+}
+
+h1 {
+  color: var(--black);
+  font-family: font;
+  font-weight: 700;
+}
+
+h2 {
+  color: var(--black);
+  font-family: font;
+  font-weight: 700;
+}
+
+span {
+  color: var(--eerie);
+  font-family: font;
+  font-weight: 377;
+  font-size: 17px;
+}
+
+#insta {
+  padding-right: 20px;
+  padding-top: 7px;
+}
+
+#whats {
+  margin-top: 8px;
+}
+
+#logo_insta {
+  width: 31px;
+  margin-top: 3px;
+  border: none;
+}
+
+#logo_whats {
+  width: 17px;
+  margin-top: 9px;
+  border: none;
+}
+
+.contt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/*Tablet - Responsividade */
+@media (max-width: 1024px) and (min-width: 720px) {
+  body {
+    background: url(/image/imagens-universo.jpg);
+    height: 647px;
+  }
+
+  .card {
+    width: 60%;
+  }
+
+  .content {
+    width: 50%;
+  }
+
+  .box:hover {
+    height: 100%;
+    width: 100%;
+  }
+
+  .box:hover #foto {
+    height: 50%;
+    width: 50%;
+  }
+}
+
+/*Mobile - Responsividade */
+@media (max-width: 720px) {
+  body {
+    background: url(/image/imagens-universo.jpg);
+    height: 650px;
+  }
+
+  .card {
+    width: 70%;
+  }
+
+  .box:hover {
+    height: 100%;
+    width: 100%;
+  }
+
+  .box:hover #foto {
+    height: 50%;
+    width: 50%;
+  }
+}
