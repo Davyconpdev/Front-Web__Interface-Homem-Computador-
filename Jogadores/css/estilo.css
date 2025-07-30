@@ -1,0 +1,45 @@
+body {
+    background: linear-gradient(rgb(0, 89, 255), rgb(183, 0, 255));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    font-weight: bold;
+}
+
+.caixa {
+    background: rgb(255, 255, 255);
+    width: 370px;
+    height: 453px;
+    display: flex;
+    border-radius: 17px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 17px;
+}
+
+#foto {
+    border-radius: 17px;
+    width: 270px;
+    height: 280px;
+}
+
+.caixa button {
+    background: rgb(56, 53, 219);
+    color: whitesmoke;
+    outline: none;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 17px;
+}
+
+.caixa button:hover {
+    background: rgb(0, 238, 255);
+    color: rgb(231, 9, 9);
+}
