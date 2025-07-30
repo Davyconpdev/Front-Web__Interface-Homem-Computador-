@@ -1,0 +1,62 @@
+/*body{
+    height: 100vh;  
+}*/
+#mundo{
+    background: url(/images/fundo-estrelas.avif);
+    background-size: cover;
+    height: 100vh;
+}
+
+#carro{
+background: url(/images/Car_Right_Red_26350.png);
+background-size: contain; 
+width: 110px;
+height: 110px;
+position: absolute;
+top: 719px;
+left: 0px;
+
+animation-name: dirigir;
+animation-duration: 0.5s;
+}
+
+#chao{
+ background: url(/images/chao.png);  
+ background-size: cover;  
+ background-position: 800px 300px;
+ width: 100%;
+ height: 100px;
+ position: absolute;
+ top: 720px;
+ left: 0px;
+}
+
+#lua{
+   background: url(/images/moontime_lun_1466.png);
+   background-size: contain; 
+   width: 130px;
+   height: 130px;
+   position: absolute;
+   top: 57px;
+   left: 50%;
+}
+
+@keyframes dirigir{
+    from{transform: translateX(100px)}
+    to{transform: translateX(1400px)}
+}
+
+@keyframes girar{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+
+@keyframes andarGirar{
+    0%{transform: translateX(0px) rotate(0deg)}
+    100%{transform: translateX(500px) rotate(300deg)}
+}
+
+/*@keyframes mudarCor{
+    0%{background: red;}
+    100%{background: blue;}
+}
