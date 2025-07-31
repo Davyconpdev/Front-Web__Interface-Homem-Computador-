@@ -1,0 +1,57 @@
+body {
+    height: 100vh;
+    background: url(/images/carro-viagem.webp);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meio {
+    background: rgba(0, 255, 157, 0.247);
+    height: 470px;
+    width: 410px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 3px 3px 3px black;
+}
+
+.meio input {
+    width: 280px;
+    height: 27px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    flex-direction: column;
+}
+
+.meio button {
+    width: 120px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(239, 255, 22);
+    background: rgb(1, 130, 250);
+}
+
+.meio button:hover {
+    background: rgb(239, 255, 22);
+    color: blue;
+}
+
+.meio span {
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
