@@ -1,0 +1,74 @@
+body{
+    background: linear-gradient( rgb(0, 217, 255),darkblue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.principal{
+background: white;
+width: 1100px;
+height: 600px;
+border-radius: 20px;
+display: flex;
+align-items:center;
+justify-content: center;
+padding: 17px;
+flex-direction:center;
+}
+
+.principal div{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 57px;
+    gap: 45px;  
+}
+
+.principal button{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.botoes button{ 
+    background: darkblue;
+    color: azure;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 90px;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.3s;
+ }
+ 
+div .botoes{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}  
+
+div .foto{ 
+   display: flex;
+   justify-items: flex-end;
+   align-items: center;
+   flex-direction: initial;
+}
+
+.foto img{
+    width: 297px;
+    height: 297px;
+    border-radius: 7px;
+}
+
+.botoes button:hover{
+    background:red ;
+    color: blue;
+}
